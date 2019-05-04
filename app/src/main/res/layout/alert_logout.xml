@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:background="@drawable/rect_ash_stroke_bg">
+
+    <ImageView android:id="@+id/al_iv_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"/>
+
+    <TextView
+        android:id="@+id/al_tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Are you sure you want to LOGOUT?"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_below="@+id/al_iv_close"/>
+    <Button
+        android:id="@+id/al_bt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_below="@+id/al_tv_msg"
+        android:background="@drawable/rect_stroke_orng_bg"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:textSize="13dp"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="Place Name"
+        android:layout_weight="1"/>
+
+    <TextView android:id="@+id/lg_tv_arrived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrived"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:textColor="#c9c6c6"
+        android:background="@drawable/rect_stroke_ash_bg"
+        android:textStyle="bold"/>
+
+</LinearLayout>

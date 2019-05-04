@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <RelativeLayout android:id="@+id/am_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip summary"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:padding="12dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView android:id="@+id/aov_tv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/rect_white_stroke_bg"
+                android:gravity="center"
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp" />
+
+        </RelativeLayout>
+
+
+        <TextView android:id="@+id/aov_tv_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept Trip ?"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/aov_tv_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Trip !"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/aov_tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxxx"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="16dp"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/round_btn"/>
+                <View android:layout_width="1dp"
+                    android:layout_height="94dp"
+                    android:background="#404040"/>
+                <TextView android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/round_btn"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starting Point"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorText"
+                    android:layout_margin="4dp"
+                    android:textStyle="bold"/>
+                <TextView android:id="@+id/aov_tv_spoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uppal"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="12dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Point"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorText"
+                    android:layout_margin="4dp"
+                    android:textStyle="bold"/>
+                <TextView android:id="@+id/aov_tv_epoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="punjagutta"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="2dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stoppages"
+            android:textColor="#646464"
+            android:textSize="18sp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d0d0d0"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="8dp" />
+
+        <ExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

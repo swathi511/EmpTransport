@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#c4c1c1">
+
+        <LinearLayout android:id="@+id/aar_ll_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_weight="1">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!--<ImageView android:id="@+id/aar_iv_from"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_edit"/>-->
+
+        <TextView android:id="@+id/aar_tv_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    <LinearLayout android:id="@+id/aar_ll_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!--<ImageView android:id="@+id/aar_iv_to"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_edit"/>-->
+
+
+
+    <TextView android:id="@+id/aar_tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    <TextView android:id="@+id/aar_tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:padding="12dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/rect_stroke_blue_bg"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView android:id="@+id/aar_tv_no_duties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Duties Found !"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/aar_rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

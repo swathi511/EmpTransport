@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:id="@+id/arr_ll">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView android:id="@+id/arr_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textColor="@color/colorAsh"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/arr_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="right"
+            android:background="@drawable/rect_stroke_blue_bg"
+            android:padding="6dp"/>
+
+
+    </LinearLayout>
+    <TextView android:id="@+id/arr_tv_route_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Route Name"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kms"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAshLight"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="8dp"/>
+        <TextView android:id="@+id/arr_tv_kms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:layout_weight="1"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hrs"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAshLight"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="8dp"/>
+        <TextView android:id="@+id/arr_tv_hrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#e7e5e5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/rn_ll"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

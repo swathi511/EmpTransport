@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Employee Transportation Driver</string>
+    <string name="trip_id">Trip No</string>
+    <string name="trip_date">Trip Date - </string>
+    <string name="veh_cat">Vehicle Category - </string>
+    <string name="veh_reg">Vehicle Reg. No - </string>
+    <string name="accept_duty">Accept Duty</string>
+    <string name="start_duty">Start Duty</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="all_rides">All Rides</string>
+    <string name="logout">Logout</string>
+    <string name="ride_in_progress">Duty In Progress</string>
+    <string name="my_duties">My Duties</string>
+    <string name="current_location">Current Location</string>
+    <string name="mobile">Mobile No.</string>
+
+    <string name="pickup">Arrived</string>
+    <string name="finish_duty">Finish Duty</string>
+    <string name="time_started">Time Started</string>
+    <string name="time_ended">Time Finished</string>
+    <string name="total_kms">Total Kms</string>
+    <string name="total_hrs">Total Hrs</string>
+    <string name="next_duty">Next Duty</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="home">Home</string>
+    <string name="Route">Route</string>
+    <string name="tripDate">Trip Date</string>
+    <string name="staff_details">Staff Details</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Book a Taxi</item>
+        <item>Your Profile</item>
+        <item>Your Rides</item>
+    </string-array>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="retry">Retry</string>
+    <string name="save_data">Save Data</string>
+</resources>

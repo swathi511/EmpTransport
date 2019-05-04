@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@drawable/rect_ash_stroke_bg">
+
+    <TextView
+        android:id="@+id/av_tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Please Update the App from PlayStore!"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/av_bt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_below="@+id/av_tv_msg"
+        android:background="@drawable/rect_stroke_blue_bg"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

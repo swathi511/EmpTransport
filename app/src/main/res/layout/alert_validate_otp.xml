@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_ash_stroke_bg"
+    android:padding="16dp">
+
+    <TextView android:id="@+id/avo_tv_empName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/employee_name"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:textStyle="bold"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText android:id="@+id/avo_et_otp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:hint="@string/enter_otp"
+        android:textColorHint="#d0d0d0"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView android:id="@+id/avo_tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rect_stroke_blue_bg"
+        android:padding="8dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rect_stroke_blue_bg"
+        android:padding="8dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

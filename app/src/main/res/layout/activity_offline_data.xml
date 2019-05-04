@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:id="@+id/am_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duty Summary"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/aod_tv_next_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rect_white_stroke_bg"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_id"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView android:id="@+id/aod_tv_tripId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tripDate"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView android:id="@+id/aod_tv_tripDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Route"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView android:id="@+id/aod_tv_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XX-XX"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_started"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView android:id="@+id/aod_tv_startingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_ended"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView android:id="@+id/aod_tv_endingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_kms"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView android:id="@+id/aod_tv_total_kms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_hrs"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView android:id="@+id/aod_tv_total_hrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/aod_tv_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/retry"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:background="@drawable/rect_solid_orng_bg"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:visibility="gone"/>
+
+    <TextView android:id="@+id/aod_tv_save_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/save_data"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:background="@drawable/rect_solid_orng_bg"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
